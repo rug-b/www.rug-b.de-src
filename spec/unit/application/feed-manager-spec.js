@@ -11,7 +11,7 @@ describe 'FeedManager'
     end
   end
     
-  describe '#render'
+  describe '.render'
     before_each
       // FeedControl mock w/ exspectations
       google.feeds.FeedControl = function() {
