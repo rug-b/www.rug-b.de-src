@@ -1,7 +1,5 @@
 describe 'FeedManager'
   before_each
-    google = { feeds: {} }
-    stub(google.feeds, 'LINK_TARGET_BLANK').and_return('LINK_TARGET_BLANK')
     feedManager = new Application.FeedManager
   end
   
