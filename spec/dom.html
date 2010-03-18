@@ -3,12 +3,12 @@
 		<link type="text/css" rel="stylesheet" href="./lib/jspec.css" />
 		<script src="./lib/jspec.js"></script>
 		<script src="./lib/jspec.xhr.js"></script>
-		<script src="../lib/yourlib.js"></script>
+		<script src="../site/javascripts/application/feed-manager.js"></script>
 		<script src="unit/spec.helper.js"></script>
 		<script>
 			function runSuites() {
 				JSpec
-				.exec('unit/spec.js')
+				.exec('unit/feed-manager-spec.js')
 				.run({ fixturePath: 'fixtures' })
 				.report()
 			}
