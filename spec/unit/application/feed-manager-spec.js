@@ -33,22 +33,22 @@ describe 'FeedManager'
     end
 
     it 'should call setNumEntries with the given config value'
-      feedManager.render({numEntries: 999});
+      feedManager.render({numEntries: 999})
       setNumEntriesAssert.should.be_true
     end
 
     it 'should call setLinkTarget with the given config value'
-      feedManager.render({linkTarget: 'MY-TARGET'});
+      feedManager.render({linkTarget: 'MY-TARGET'})
       setLinkTargetAssert.should.be_true
     end
 
     it 'should call addFeed with the given config values'
-      feedManager.render({url: 'MY-URL', title: 'MY-TITLE'});
+      feedManager.render({url: 'MY-URL', title: 'MY-TITLE'})
       addFeedAssert.should.be_true
     end
 
-    it 'should call draw with the given config values'
-      feedManager.render({renderTo: 'MY-ELEMENT'});
+    it 'should call draw with the given config value'
+      feedManager.render({renderTo: 'MY-ELEMENT'})
       drawAssert.should.be_true
     end
   end

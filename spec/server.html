@@ -7,7 +7,7 @@
 		<script>
 			function runSuites() {
 				JSpec
-				.exec('unit/feed-manager-spec.js')
+				.exec('unit/application/feed-manager-spec.js')
 				.run({ reporter: JSpec.reporters.Server, verbose: true, failuresOnly: true, fixturePath: '/spec/fixtures' })
 				.report()
 			}
