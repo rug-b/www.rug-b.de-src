@@ -2,6 +2,11 @@
 %html
   %head
     %title RubyUserGroup::Berlin
+    %script{:type => "text/javascript", :src => "http://www.google.com/jsapi"}
+    :javascript
+      google.load("jquery", "1.4.2");
+      google.load("feeds", "1");
+    = javascripts(:application, 'application/feed-manager')
     = stylesheets
   %body
     = yield
