@@ -1,4 +1,19 @@
 %h1 RubyUserGroup::Berlin
+
 %h2 ::Meetings
+  #meetings-feed{ :class => 'feed', :'data-url' => 'http://www.rug-b.de/timeline' }
+
 %h2 ::Feed
+  #global-feed{ :class => 'feed', :'data-url' => 'http://pipes.yahoo.com/pipes/pipe.run?_id=37b702d85b9c11ea144498931277bc9c&_render=rss' }
+
+%h3 ::Links
+  #links-feed{ :class => 'feed', :'data-url' => 'http://feeds.delicious.com/v2/rss/tag/rug-b?count=15' }
+
+%h3 ::Posts
+  #posts-feed{ :class => 'feed', :'data-url' => 'http://groups.google.de/group/rug-b/feed/rss_v2_0_msgs.xml' }
+
+%h3 ::Github
+  #github-feed{ :class => 'feed', :'data-url' => 'http://github.com/rug-b.atom' }
+
 %h2 ::Tweets
+  #twitter-feed{ :class => 'feed', :'data-url' => 'http://twitter.com/statuses/user_timeline/8936812.rss' }
