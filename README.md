@@ -22,6 +22,8 @@ To view the site (work in progress) on your development machine do:
     $ git clone git://github.com/martinrehfeld/www.rug-b.de-src.git
     $ sudo gem install staticmatic # unless already installed
     $ staticmatic preview www.rug-b.de-src
+    
+    Point your browser to http://localhost:3000/
 
 To run the specs:
 
@@ -31,5 +33,5 @@ To run the specs:
 Resources
 ---------
 
-* [Tracker](https://www.pivotaltracker.com/projects/63590)
+* [This project on Pivotal Tracker](https://www.pivotaltracker.com/projects/63590)
 * [RUG-B Maillinglist](http://groups.google.de/group/rug-b)
