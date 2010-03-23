@@ -11,7 +11,7 @@ Design Goals / Decisions
 
 We are using StaticMatic to generate the actual site to be pushed to [Github Pages](http://rug-b.github.com).
 
-All content will be pulled live from various RSS feeds. Some of these feeds will be provided using Yahoo! pipes applying custom filters and post-processing. Should this turn out to be too limited, we will create our own aggregator/identiy mapper/feed emitter.
+All content will be pulled live from various RSS feeds. Some of these feeds will be provided using Yahoo! pipes applying custom filters and post-processing. Should this turn out to be too limited, we will create our own aggregator/identity mapper/feed emitter.
 
 
 Instructions
