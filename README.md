@@ -19,15 +19,19 @@ Instructions
 
 To view the site (work in progress) on your development machine do:
 
+    Install necessary gems (unless already installed):
+    $ sudo gem install staticmatic
+    $ sudo gem install compass -v0.10.0.rc1
+    $ sudo gem install compass-colors redgreengrid
+
+    Checkout site source and start preview server:
     $ git clone git://github.com/martinrehfeld/www.rug-b.de-src.git
-    $ sudo gem install staticmatic # unless already installed
     $ staticmatic preview www.rug-b.de-src
     
     Point your browser to http://localhost:3000/
 
-To run the specs:
+To run the Javascript specs:
 
-    $ sudo gem install jspec # unless already installed
     $ open www.rug-b.de-src/spec/dom.html
 
 Resources
