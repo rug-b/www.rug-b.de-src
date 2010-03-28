@@ -7,7 +7,7 @@ Application.FeedManager = function(givenConfig) {
     renderTo: null,
     title: null,
     linkTarget: google.feeds.LINK_TARGET_BLANK,
-    numEntries: 15
+    numEntries: 4
   };
   
   if (givenConfig) {

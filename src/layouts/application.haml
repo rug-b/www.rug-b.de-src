@@ -1,6 +1,7 @@
 !!! 5
 %html
   %head
+    %meta(charset="utf-8")
     %title RubyUserGroup::Berlin
     %script{:type => "text/javascript", :src => "http://www.google.com/jsapi"}
     :javascript
@@ -8,5 +9,15 @@
       google.load("feeds", "1");
     = javascripts(:application, 'application/feed-manager')
     = stylesheets
+    
   %body
-    = yield
+    %header
+      = img 'rug-b-ruby-user-group-berlin.jpg', :alt => 'RUG::B—Ruby User Group Berlin'
+      %nav
+        = link 'Twitter', 'http://twitter.com/rug_b'
+        = link 'Google Group', 'http://groups.google.com/group/rug-b'
+        = link 'Xing Group', 'http://www.xing.com/new/rug-b'
+        = link 'Github', 'http://github.com/rug-b'
+    .page
+      = yield
+    -#%div(style="position:absolute;left:0;top:0;right:0;bottom:0;background:url(/images/rgg.png) repeat")

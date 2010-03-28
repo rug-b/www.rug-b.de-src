@@ -1,3 +1,6 @@
 site/*
 !site/images
 !site/javascripts
+.DS_Store
+.sass-cache
+src/.sass-cache

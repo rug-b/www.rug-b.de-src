@@ -1,0 +1,67 @@
+#meetings-feed
+  background: url(../images/meetings-background.png) repeat-y
+  
+  .feed
+    background: url(../images/meetings.png) no-repeat
+    color= !light
+    padding: 150px 20px 20px 42px
+  
+#links-feed
+  background: url(../images/links.png) no-repeat
+  padding: 50px 20px 20px 84px
+  
+#global-feed
+  background: url(../images/feed-background.png) repeat-y
+
+  .feed
+    background: url(../images/feed.png) no-repeat
+    color= !light
+    padding: 110px 20px 20px 38px
+  
+#twitter-feed
+  background: url(../images/twitter.png) no-repeat
+  padding: 50px 20px 20px 68px
+  
+#posts-feed
+  background: url(../images/posts-background.png) repeat-y
+
+  .feed
+    background: url(../images/posts.png) no-repeat 0 -20px
+    padding: 190px 20px 20px 70px
+  
+#github-feed
+  background: url(../images/github.png) no-repeat
+  padding: 50px 20px 20px 61px
+  
+
+// Remove defaults  
+
+.gfc-resultsHeader
+  display: none
+
+.gf-result
+  +clearfix
+  +margin-bottom(0.5)
+  
+  .gf-author,
+  .gf-spacer,
+  .gf-relativePublishedDate
+    color= mix(!red, !dark)
+    float: left
+    height= !line_height
+    margin-right: 5px
+    overflow: hidden
+    
+    #meetings-feed &,
+    #global-feed &
+      color= mix(!red, !light)
+    
+  .gf-title
+    height= !line_height
+
+a
+  color= mix(!red, !dark, 25%)
+
+  #meetings-feed &,
+  #global-feed &
+    color= mix(!red, !light, 10%)
