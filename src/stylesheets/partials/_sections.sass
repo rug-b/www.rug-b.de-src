@@ -3,7 +3,7 @@
   
   .feed
     background: url(../images/meetings.png) no-repeat
-    color= !light
+    color: $light
     padding: 150px 20px 20px 42px
   
 #links-feed
@@ -15,7 +15,7 @@
 
   .feed
     background: url(../images/feed.png) no-repeat
-    color= !light
+    color: $light
     padding: 110px 20px 20px 38px
   
 #twitter-feed
@@ -46,22 +46,22 @@
   .gf-author,
   .gf-spacer,
   .gf-relativePublishedDate
-    color= mix(!red, !dark)
+    color: mix($red, $dark)
     float: left
-    height= !line_height
+    height: $line_height
     margin-right: 5px
     overflow: hidden
     
     #meetings-feed &,
     #global-feed &
-      color= mix(!red, !light)
+      color: mix($red, $light)
     
   .gf-title
-    height= !line_height
+    height: $line_height
 
 a
-  color= mix(!red, !dark, 25%)
+  color: mix($red, $dark, 25%)
 
   #meetings-feed &,
   #global-feed &
-    color= mix(!red, !light, 10%)
+    color: mix($red, $light, 10%)

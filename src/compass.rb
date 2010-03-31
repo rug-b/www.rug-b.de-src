@@ -1,8 +1,7 @@
 ROOT = File.join(File.dirname(__FILE__), '/')
 puts "Site root is: " + File.expand_path(ROOT)
 
-require "redgreengrid"
-require "compass-colors"
+require "redgreengrid" # version > 0.3.2
  
 output_style = :expanded
 project_path = ROOT               # must be set for Compass to work 
