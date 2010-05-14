@@ -35,6 +35,10 @@ To run the Javascript specs:
 
     $ open www.rug-b.de-src/spec/dom.html
 
+To publish the site (build site with staticmatic and push the result to http://github.com/rug-b/rug-b.github.com):
+
+    $ rake publish
+
 Resources
 ---------
 
