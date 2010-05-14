@@ -1,6 +1,7 @@
 site/*
 !site/images
 !site/javascripts
+!site/CNAME
 .DS_Store
 .sass-cache
 src/.sass-cache
