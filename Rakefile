@@ -21,6 +21,6 @@ git push
       STDERR.puts "Your working directory is not clean. Please commit local modifications before publishing."
     end
   ensure
-    `cd '#{cwd}'"; rm -rf tmp`
+    `cd '#{cwd}'; rm -rf tmp`
   end
 end
