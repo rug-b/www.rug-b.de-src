@@ -6,7 +6,8 @@ task :publish do
       current_commit = `git log | head -1 | sed -e 's/^commit //'`
       system <<-CMD
 staticmatic build . &&
-mkdir -p tmp; rm -rf tmp/* &&
+mkdir -p tmp &&
+rm -rf tmp/* &&
 cd tmp &&
 git clone git@github.com:rug-b/rug-b.github.com.git &&
 cp -r ../site/* rug-b.github.com &&
