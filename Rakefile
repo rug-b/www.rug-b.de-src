@@ -1,8 +1,8 @@
 desc 'Build and publish the site to rug-b.github.com'
 task :publish do
-  begin
-    if `git status` =~ /working directory clean/
-      cwd = `pwd`
+  if `git status` =~ /working directory clean/
+    begin
+      cwd = `pwd`.chomp
       current_commit = `git log | head -1 | sed -e 's/^commit //'`
       system <<-CMD
 staticmatic build . &&
@@ -16,11 +16,13 @@ git add * &&
 git commit -a -m 'built from source repo www.rug-b.de at #{current_commit}' &&
 git push
       CMD
-
-    else
-      STDERR.puts "Your working directory is not clean. Please commit local modifications before publishing."
+    ensure
+      system <<-CMD
+cd '#{cwd}' &&
+rm -rf tmp
+      CMD
     end
-  ensure
-    `cd '#{cwd}'; rm -rf tmp`
+  else
+    STDERR.puts "Your working directory is not clean. Please commit local modifications before publishing."
   end
 end
