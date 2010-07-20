@@ -20,10 +20,10 @@ Instructions
 To view the site (work in progress) on your development machine do:
 
     Install necessary gems (unless already installed):
-    $ sudo gem install staticmatic
-    $ sudo gem install haml --pre
-    $ sudo gem install compass -v0.10.0.rc1
-    $ sudo gem install redgreengrid -v0.3.2
+    $ gem install staticmatic --pre  # tested with 0.11.0.alpha.8
+    $ gem install haml               # tested with 3.0.13
+    $ gem install compass            # tested with 0.10.2
+    $ gem install redgreengrid       # tested with 0.3.2
 
     Checkout site source and start preview server:
     $ git clone git://github.com/martinrehfeld/www.rug-b.de-src.git
