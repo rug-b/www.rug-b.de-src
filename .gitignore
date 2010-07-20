@@ -6,3 +6,5 @@ site/*
 .sass-cache
 src/.sass-cache
 tmp
+.bundle/config
+.bundle/environment.rb

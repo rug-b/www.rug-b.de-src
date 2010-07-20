@@ -1,3 +1,6 @@
+require "bundler"
+Bundler.setup
+
 require 'compass'
  
 # Parse the Compass config

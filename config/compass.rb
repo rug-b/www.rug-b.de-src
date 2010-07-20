@@ -1,4 +1,4 @@
-require "redgreengrid" # version > 0.3.2
+require "redgreengrid"
  
 output_style = :expanded
 project_path = File.join(File.dirname(__FILE__), '/') # must be set for Compass to work 
