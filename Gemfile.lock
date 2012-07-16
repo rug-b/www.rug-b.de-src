@@ -5,6 +5,7 @@ GEM
       haml (>= 3.0.4)
     haml (3.0.13)
     rack (1.4.1)
+    rake (0.9.2.2)
     redgreengrid (0.3.2)
     staticmatic (0.11.0.alpha.8)
       compass (>= 0.10.0)
@@ -17,5 +18,6 @@ PLATFORMS
 DEPENDENCIES
   compass (= 0.10.2)
   haml (= 3.0.13)
+  rake
   redgreengrid (>= 0.3.2)
   staticmatic (= 0.11.0.alpha.8)
