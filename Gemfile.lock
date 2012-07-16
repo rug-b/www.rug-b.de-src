@@ -1,33 +1,21 @@
---- 
-dependencies: 
-  compass: 
-    group: 
-    - :default
-    version: ">= 0"
-  haml: 
-    group: 
-    - :default
-    version: ">= 0"
-  staticmatic: 
-    group: 
-    - :default
-    version: ">= 0.11.0.alpha.8"
-  redgreengrid: 
-    group: 
-    - :default
-    version: ">= 0.3.2"
-specs: 
-- haml: 
-    version: 3.0.13
-- compass: 
-    version: 0.10.2
-- rack: 
-    version: 1.2.1
-- redgreengrid: 
-    version: 0.3.2
-- staticmatic: 
-    version: 0.11.0.alpha.8
-hash: 827dc36c1ef98f8ad74ea168d8b01520eb7254e1
-sources: 
-- Rubygems: 
-    uri: http://rubygems.org
+GEM
+  remote: http://rubygems.org/
+  specs:
+    compass (0.10.2)
+      haml (>= 3.0.4)
+    haml (3.0.13)
+    rack (1.4.1)
+    redgreengrid (0.3.2)
+    staticmatic (0.11.0.alpha.8)
+      compass (>= 0.10.0)
+      haml (>= 2.0.0)
+      rack (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass (= 0.10.2)
+  haml (= 3.0.13)
+  redgreengrid (>= 0.3.2)
+  staticmatic (= 0.11.0.alpha.8)
